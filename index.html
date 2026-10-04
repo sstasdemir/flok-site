@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Flok, Yakındaki etkinlikleri bul, katıl, sohbet et. Biletini QR ile kapıda göster." />
+  <title>flok, Yakındaki etkinlikler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=ux11" />
+</head>
+<body>
+  <a class="skip" href="#main">İçeriğe geç</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo flok-logo">flok</a>
+      <nav class="nav__links" aria-label="Menü">
+        <a href="#features">Özellikler</a>
+        <a href="#how">Nasıl çalışır</a>
+        <a href="#waitlist">Listeye katıl</a>
+      </nav>
+      <a href="#waitlist" class="btn btn--primary btn--sm">Erken erişim</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="badge">Yakında yayında</p>
+          <h1>Yakındaki etkinlikleri<br />kolayca bul.</h1>
+          <p class="lead">
+            Flok; konser, standup, brunch ve buluşmaları tek uygulamada toplar.
+            Keşfet, katıl, kapıda QR ile gir, aşağıda her adımın detayı var.
+          </p>
+
+          <form class="waitlist" data-waitlist data-source="hero" onsubmit="return false;" novalidate>
+            <div class="waitlist__row">
+              <label class="sr-only" for="waitlist-email-hero">E-posta</label>
+              <input
+                id="waitlist-email-hero"
+                class="waitlist__input"
+                type="email"
+                name="email"
+                autocomplete="email"
+                inputmode="email"
+                placeholder="E-posta adresin"
+                required
+              />
+              <input class="waitlist__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <button type="submit" class="btn btn--primary">Listeye katıl</button>
+            </div>
+            <p class="waitlist__hint">Uygulama çıkınca haber veririz. Gereksiz mail yok.</p>
+            <p class="waitlist__status" data-waitlist-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="hero__media" aria-label="Uygulama ekranları">
+          <div class="hero__phones">
+            <div class="device device--hero" aria-hidden="true">
+              <div class="placeholder placeholder--screen">
+                <span class="placeholder__label">Ekran</span>
+                <span class="placeholder__sub">Keşfet</span>
+              </div>
+            </div>
+            <div class="device device--hero" aria-hidden="true">
+              <div class="placeholder placeholder--screen">
+                <span class="placeholder__label">Ekran</span>
+                <span class="placeholder__sub">Katıl</span>
+              </div>
+            </div>
+            <div class="device device--hero" aria-hidden="true">
+              <div class="placeholder placeholder--screen">
+                <span class="placeholder__label">Ekran</span>
+                <span class="placeholder__sub">QR bilet</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="how__inner">
+        <h2 class="section-title">Nasıl çalışır?</h2>
+        <ol class="how__steps">
+          <li>
+            <span class="how__num">1</span>
+            <div>
+              <h3>Etkinlik bul</h3>
+              <p>Listeden veya haritadan yakındaki etkinliklere bak.</p>
+            </div>
+          </li>
+          <li>
+            <span class="how__num">2</span>
+            <div>
+              <h3>Katıl</h3>
+              <p>Başvurunu gönder. Onaylanınca sohbete ve bilete erişirsin.</p>
+            </div>
+          </li>
+          <li>
+            <span class="how__num">3</span>
+            <div>
+              <h3>Kapıda gir</h3>
+              <p>QR kodunu göster. Düzenleyen onaylar, içeri geçersin.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="features__intro">
+        <p class="eyebrow">Özellikler</p>
+        <h2 class="section-title">Uygulamada neler yapabilirsin?</h2>
+        <p class="section-sub">Etkinlik aramaktan kapı girişine, kendi etkinliğini açmaktan foto paylaşmaya kadar her şey Flok’ta.</p>
+      </div>
+
+      <article class="feature">
+        <div class="feature__copy">
+          <p class="eyebrow">01 · Keşfet</p>
+          <h3>Yakındaki etkinlikleri gör</h3>
+          <p>
+            Popüler ve yaklaşan etkinlikler listede çıkar.
+            Haritadan da bakıp sana yakın olanları seçebilirsin.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Liste ve harita</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__copy">
+          <p class="eyebrow">02 · Katıl</p>
+          <h3>Detaylara bak, başvur</h3>
+          <p>
+            Saat, yer, ücret ve kontenjanı gör.
+            Kimlerin katıldığını kontrol et, başvurunu gönder.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Etkinlik detayı</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__copy">
+          <p class="eyebrow">03 · Sohbet</p>
+          <h3>Diğer katılımcılarla yazış</h3>
+          <p>
+            Her etkinliğin kendi sohbeti var.
+            Nerede buluşacağınızı konuşun, sorularınızı sorun.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Etkinlik sohbeti</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__copy">
+          <p class="eyebrow">04 · QR bilet</p>
+          <h3>Kapıda QR ile giriş</h3>
+          <p>
+            Onaylandıktan sonra biletin uygulamada hazır olur.
+            Kapıda kodu göster; düzenleyen okutur ve girişin tamamlanır.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Bilet ve QR</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__copy">
+          <p class="eyebrow">05 · Etkinlik aç</p>
+          <h3>Kendi etkinliğini oluştur</h3>
+          <p>
+            Yer, saat, kontenjan ve kuralları girip yayınla.
+            Başvuruları onayla, katılımcı listesini takip et.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Etkinlik oluştur</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__copy">
+          <p class="eyebrow">06 · Fotoğraflar</p>
+          <h3>Anıları etkinliğe ekle</h3>
+          <p>
+            Etkinlikten sonra fotoğrafları yükle.
+            Katılanlar görür, beğenir; anılar kaybolmaz.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="placeholder placeholder--frame">
+            <span class="placeholder__label">Görsel yeri</span>
+            <span class="placeholder__sub">Etkinlik fotoğrafları</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature__copy">
+          <p class="eyebrow">07 · Profil</p>
+          <h3>Gittiğin etkinlikler profilinde kalsın</h3>
+          <p>
+            Katıldığın etkinlikler ve paylaştığın fotoğraflar profiline işlenir.
+            Böylece diğer kullanıcılar seni daha iyi tanır.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="device device--sm">
+            <div class="placeholder placeholder--screen">
+              <span class="placeholder__label">Ekran görüntüsü</span>
+              <span class="placeholder__sub">Profil</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta" id="waitlist">
+      <div class="cta__inner">
+        <p class="flok-logo cta__brand">flok</p>
+        <h2 class="section-title section-title--light">İlk kullanıcılar<br />arasında ol.</h2>
+        <p class="cta__sub">
+          E-posta bırak. Uygulama yayına girdiğinde sana yazalım.
+        </p>
+
+        <form class="waitlist waitlist--center" data-waitlist data-source="footer" onsubmit="return false;" novalidate>
+          <div class="waitlist__row">
+            <label class="sr-only" for="waitlist-email-footer">E-posta</label>
+            <input
+              id="waitlist-email-footer"
+              class="waitlist__input"
+              type="email"
+              name="email"
+              autocomplete="email"
+              inputmode="email"
+              placeholder="E-posta adresin"
+              required
+            />
+            <input class="waitlist__hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="btn btn--light">Listeye katıl</button>
+          </div>
+          <p class="waitlist__status" data-waitlist-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#top" class="flok-logo footer__logo">flok</a>
+      <nav aria-label="Yasal">
+        <a href="https://www.notion.so/3a695783c9e9813eb2e0d123fb446a2c" target="_blank" rel="noopener noreferrer">Gizlilik</a>
+        <a href="https://www.notion.so/3a695783c9e9813ba16dc70a9746e57d" target="_blank" rel="noopener noreferrer">Kullanım Şartları</a>
+        <a href="mailto:support@flok.app">Destek</a>
+      </nav>
+      <p>&copy; <span id="year"></span> Flok</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js?v=ux11"></script>
+  <script src="js/main.js?v=ux11"></script>
+</body>
+</html>
