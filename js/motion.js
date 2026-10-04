@@ -85,9 +85,7 @@
   const screens = Array.from(story?.querySelectorAll("[data-screen]") || []);
   const dots = Array.from(story?.querySelectorAll(".story__dots li") || []);
   const storyVisual = story?.querySelector(".story__visual");
-  const storyPhone = story?.querySelector(".phone--story");
   const storyRail = story?.querySelector(".story__rail");
-  const tilts = [-2.5, 2, -1.5, 2.5, 0];
   let activeStep = 0;
 
   const setActiveStep = (index) => {
@@ -96,7 +94,6 @@
     steps.forEach((step, i) => step.classList.toggle("is-active", i === index));
     screens.forEach((screen, i) => screen.classList.toggle("is-active", i === index));
     dots.forEach((dot, i) => dot.classList.toggle("is-active", i === index));
-    storyPhone?.style.setProperty("--tilt", reduceMotion.matches ? "0deg" : `${tilts[index] ?? 0}deg`);
   };
 
   const updateStory = () => {

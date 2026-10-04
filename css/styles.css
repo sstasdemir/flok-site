@@ -452,8 +452,6 @@ figure { margin: 0; }
 }
 .phone--story {
   --w: min(320px, calc((100svh - var(--nav-h) - 110px) / 2.18));
-  rotate: var(--tilt, 0deg);
-  transition: rotate 0.8s var(--spring);
 }
 .phone--story img {
   opacity: 0;
