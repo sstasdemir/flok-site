@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["M44962LG2B.Serhat.Flok"],
+        "components": [
+          { "/": "/event", "?": { "id": "?*" }, "comment": "Shared event" },
+          { "/": "/profile", "?": { "id": "?*" }, "comment": "Shared profile" }
+        ]
+      }
+    ]
+  }
+}
